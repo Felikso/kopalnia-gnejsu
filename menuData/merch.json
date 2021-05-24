@@ -1,0 +1,158 @@
+
+[
+  {
+        "category": "przekąski",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "panini",
+        "slug": "panini",
+        "price": "6.00",
+        "quantity": "2 szt",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "przekąski",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "frytki",
+        "slug": "frytki",
+        "price": "8.00",
+        "quantity": "300 g",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "napoje",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "herbata",
+        "slug": "herbata",
+        "price": "6.00",
+        "quantity": "330 ml",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "napoje",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "kawa",
+        "slug": "kawa",
+        "price": "6.00",
+        "quantity": "330 ml",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "napoje",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "mors / kompot",
+        "slug": "kompot",
+        "price": "6.00",
+        "quantity": "330 ml",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "napoje",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "kwas chlebowy",
+        "slug": "kwas-chlebowy",
+        "price": "8.00",
+        "quantity": "330 ml",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "dodatki",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "śmietanka na słodko",
+        "slug": "smietanka-na-slodko",
+        "price": "3.00",
+        "quantity": "50 g",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "dodatki",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "śmietana wytrawna",
+        "slug": "smietana-wytrawna",
+        "price": "3.00",
+        "quantity": "50 g",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "dodatki",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "cebulka zasmażana",
+        "slug": "cebulka-zasmazana",
+        "price": "3.00",
+        "quantity": "50 g",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "dania słodkie",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "wareniki z wiśniami",
+        "slug": "wareniki-z-wisniami",
+        "price": "10.00",
+        "quantity": "5 szt",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "dania słodkie",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "wareniki z serem",
+        "slug": "wareniki-z-serem",
+        "price": "10.00",
+        "quantity": "5 szt",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "dania główne",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "wareniki z kapustą",
+        "slug": "wareniki-z-kapusta",
+        "price": "10.00",
+        "quantity": "5 szt",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "dania główne",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "wareniki z mięsem",
+        "slug": "wareniki-z-miesem",
+        "price": "10.00",
+        "quantity": "5 szt",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "dania główne",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "wareniki z serem / pierogi ruskie",
+        "slug": "pierogi-ruskie",
+        "price": "8,00",
+        "quantity": "5 szt",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "dania główne",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "wareniki z grzybami",
+        "slug": "wareniki-z-grzybami",
+        "price": "10,00",
+        "quantity": "5 sztuk",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "zupy",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "polski barszcz",
+        "slug": "polski-barszcz",
+        "price": "10,00",
+        "quantity": "300 ml",
+        "image": "./images/kawa.jpg"
+      },{
+        "category": "zupy",
+        "desc": "jakiś opis",
+        "fieldGroupName": "dishes",
+        "name": "rosół",
+        "slug": "rosol",
+        "price": "8,00",
+        "quantity": "300 ml",
+        "image": "./images/kawa.jpg"
+      }
+  
+  ]
