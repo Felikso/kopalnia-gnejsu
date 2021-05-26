@@ -8,7 +8,7 @@
         "slug": "panini",
         "price": "6.00",
         "quantity": "2 szt",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "przekąski",
         "desc": "jakiś opis",
@@ -17,7 +17,7 @@
         "slug": "frytki",
         "price": "8.00",
         "quantity": "300 g",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "napoje",
         "desc": "jakiś opis",
@@ -26,7 +26,7 @@
         "slug": "herbata",
         "price": "6.00",
         "quantity": "330 ml",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "napoje",
         "desc": "jakiś opis",
@@ -35,7 +35,7 @@
         "slug": "kawa",
         "price": "6.00",
         "quantity": "330 ml",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "napoje",
         "desc": "jakiś opis",
@@ -44,7 +44,7 @@
         "slug": "kompot",
         "price": "6.00",
         "quantity": "330 ml",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "napoje",
         "desc": "jakiś opis",
@@ -53,7 +53,7 @@
         "slug": "kwas-chlebowy",
         "price": "8.00",
         "quantity": "330 ml",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "dodatki",
         "desc": "jakiś opis",
@@ -62,7 +62,7 @@
         "slug": "smietanka-na-slodko",
         "price": "3.00",
         "quantity": "50 g",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "dodatki",
         "desc": "jakiś opis",
@@ -71,7 +71,7 @@
         "slug": "smietana-wytrawna",
         "price": "3.00",
         "quantity": "50 g",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "dodatki",
         "desc": "jakiś opis",
@@ -80,7 +80,7 @@
         "slug": "cebulka-zasmazana",
         "price": "3.00",
         "quantity": "50 g",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "dania słodkie",
         "desc": "jakiś opis",
@@ -89,7 +89,7 @@
         "slug": "wareniki-z-wisniami",
         "price": "10.00",
         "quantity": "5 szt",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "dania słodkie",
         "desc": "jakiś opis",
@@ -98,7 +98,7 @@
         "slug": "wareniki-z-serem",
         "price": "10.00",
         "quantity": "5 szt",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "dania główne",
         "desc": "jakiś opis",
@@ -107,7 +107,7 @@
         "slug": "wareniki-z-kapusta",
         "price": "10.00",
         "quantity": "5 szt",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "dania główne",
         "desc": "jakiś opis",
@@ -116,7 +116,7 @@
         "slug": "wareniki-z-miesem",
         "price": "10.00",
         "quantity": "5 szt",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "dania główne",
         "desc": "jakiś opis",
@@ -125,7 +125,7 @@
         "slug": "pierogi-ruskie",
         "price": "8,00",
         "quantity": "5 szt",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "dania główne",
         "desc": "jakiś opis",
@@ -134,7 +134,7 @@
         "slug": "wareniki-z-grzybami",
         "price": "10,00",
         "quantity": "5 sztuk",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "zupy",
         "desc": "jakiś opis",
@@ -143,7 +143,7 @@
         "slug": "polski-barszcz",
         "price": "10,00",
         "quantity": "300 ml",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       },{
         "category": "zupy",
         "desc": "jakiś opis",
@@ -152,7 +152,7 @@
         "slug": "rosol",
         "price": "8,00",
         "quantity": "300 ml",
-        "image": "./images/kawa.jpg"
+        "image": "./images/gabion0.png"
       }
   
   ]

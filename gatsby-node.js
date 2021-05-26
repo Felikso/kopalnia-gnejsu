@@ -1,7 +1,7 @@
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const data = await graphql(`
     {
-      allMerchJson {
+      allProductDataJson {
         edges {
           node {
             slug
@@ -16,12 +16,12 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     return
   }
 
-  const merchTemplate = require.resolve("./src/templates/MerchPage.js")
+  const productTemplate = require.resolve("./src/templates/ProductPage.js")
 
-  data.data.allMerchJson.edges.forEach(edge => {
+  data.data.allProductDataJson.edges.forEach(edge => {
     createPage({
-      path: `/merch/${edge.node.slug}/`,
-      component: merchTemplate,
+      path: `/oferta/${edge.node.slug}/`,
+      component: productTemplate,
       context: {
         slug: edge.node.slug,
       },

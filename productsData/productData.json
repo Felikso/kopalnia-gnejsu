@@ -1,0 +1,60 @@
+
+[
+  {
+
+        "name": "szpilka",
+        "slug": "szpilka",
+        "image": "./images/szpilki.png",
+        "gallery":  [
+          {
+            "image": "./images/szpilki/1.png",
+            "name": "Szpilki",
+            "size": "600-1200"
+          },
+          {
+            "image": "./images/szpilki/2.png",
+            "name": "Szpilki",
+            "size": "600-1200"
+          },
+          {
+            "image": "./images/szpilki/3.png",
+            "name": "Szpilki",
+            "size": "600-1200"
+          }
+        ],
+        "fraction": [
+          {
+            "size": "600-1200"
+          }
+        ],
+        "color": "Szarość i brąz dodatkiem bieli.",
+        "moreInfo": "Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać."
+      },{
+        "name": "płytka",
+        "slug": "płytka",
+        "price": "8.00",
+        "image": "./images/plytki.png",
+        "gallery":  [
+          {
+            "image": "./images/plytka/1.png",
+            "name": "Płytka ozdobna",
+            "size": "200-500"
+          },
+          {
+            "image": "./images/plytka/2.png",
+            "name": "Płytka Gnejsowa",
+            "size": "100-400"
+          }
+        ],
+        "fraction": [
+          {
+            "size": "200-500"
+          },
+          {
+            "size": "100-400"
+          }
+        ],
+        "color": "Brąz i szarość.",
+        "moreInfo": "Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać."
+      }
+  ]

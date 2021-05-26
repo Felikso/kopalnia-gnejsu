@@ -32,7 +32,10 @@ const DesktopNavMenu = () => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/merch">Merch</Link>
+          <Link to="/galeria">Aranżacje</Link>
+        </li>
+        <li>
+          <Link to="/oferta">Oferta</Link>
         </li>
         <li>
           <Link to="/about">Contact</Link>

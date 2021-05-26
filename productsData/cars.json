@@ -1,0 +1,132 @@
+[
+{
+    "type": "header",
+    "version": "4.9.5",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+},
+{
+    "type": "database",
+    "name": "serwer62135_kopalnia"
+},
+{
+    "type": "table",
+    "name": "cars",
+    "database": "serwer62135_kopalnia",
+    "data": 
+[
+{
+    "id": "0",
+    "car_id": "0",
+    "car_name": "Aranżacja",
+    "slug": "aranzacja",
+    "image": "small",
+    "desc": "opis aranżacji",
+    "published": "0",
+    "price": "cena",
+    "another_info": "opis aranżacji",
+    "photos": "38",
+    "img": "big",
+    "color": "kolor",
+    "opis": "opis aranzacji",
+    "size": "rozmiar aranzacji"
+},
+{
+    "id": "1",
+    "car_id": "1",
+    "car_name": "Gnejs ozdobny",
+    "slug": "gnejs-ozdobny",
+    "image": "gnejsozdobny.png",
+    "desc": "Gnejs jest unikatowym kruszywem ozdobnym, który dzięki swoim cechom ma wiele zastosowań. Doskonale zastąpi korę drewnianą w miejscach z zielenią. Sprawdzi się jako ozdoba zarówno we wnętrzach, w akwariach i donicach, jak i na zewnątrz, w ogrodach, oczkach i akwenach wodnych. Wielobarwność to niepowtarzalny atut gnejsu. Naturalnie stworzone połyskujące odcienie szarości i brązu z dodatkiem bieli idealnie komponują się z każdą  roślinnością. Gnejs ozdobny utrzymuje wilgoć w glebie zapobiegając parowaniu z odkrytej powierzchni ziemi, skutecznie chroni rośliny przed działaniem intensywnego nasłonecznienia oraz stanowi ochronę przed rozwojem chwastów. Naturalna struktura gnejsu daje nieograniczone możliwości kompozycyjne. Jego ogromną zaletą jest odporność na czynniki atmosferyczne oraz wysoka wytrzymałość, dzięki czemu jego przeznaczenie jest nieograniczone a aranżacje z jego zastosowaniem będą długotrwałe i nie będą wymagały dużego nakładu pracy przy ich utrzymaniu.",
+    "published": "1",
+    "price": "cena gnejsu",
+    "another_info": "Struktura Gnejsu nadaje mu charakterystyczny kształt w wyniku czego frakcja może się różnić. Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać.",
+    "photos": "3",
+    "img": "gnejsozdobny0.png",
+    "color": "Połyskująca szarość i brąz z dodatkiem bieli.",
+    "opis": "opis gnejsu",
+    "size": "<ul>\r\n<li>10-20<\/li>\r\n<li>20-40<\/li>\r\n<li>40-60<\/li>\r\n<\/ul>"
+},
+{
+    "id": "2",
+    "car_id": "2",
+    "car_name": "Płytka",
+    "slug": "plytka",
+    "image": "plytki.png",
+    "desc": "",
+    "published": "1",
+    "price": "cena plytek",
+    "another_info": "Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać.",
+    "photos": "2",
+    "img": "plytki0.png",
+    "color": "Brąz i szarość.",
+    "opis": "opis plytek",
+    "size": "<b>Płytka ozdobna<\/b>\r\n\r\n<ul>\r\n\r\n<li>200 - 500<\/li>\r\n\r\n<li>500 - 1000<\/li>\r\n\r\n<\/ul>\r\n\r\n<\/br>\r\n\r\n<b>Płytka Gnejsowa\r\n<\/b>\r\n\r\n<ul>\r\n\r\n<li>100 - 400<\/li>\r\n\r\n<\/ul>"
+},
+{
+    "id": "3",
+    "car_id": "3",
+    "car_name": "Szpilka",
+    "slug": "szpilka",
+    "image": "szpilki.png",
+    "desc": "",
+    "published": "1",
+    "price": "cena szpilek",
+    "another_info": "Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać.",
+    "photos": "3",
+    "img": "szpilki0.png",
+    "color": "Szarość i brąz dodatkiem bieli.",
+    "opis": "opis szpilek",
+    "size": "<ul>\r\n<li>600 - 1200<\/li>\r\n<\/ul>\r\n"
+},
+{
+    "id": "4",
+    "car_id": "4",
+    "car_name": "Głaz",
+    "slug": "glaz",
+    "image": "glaz.png",
+    "desc": "",
+    "published": "1",
+    "price": "cena glazu",
+    "another_info": "Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać.",
+    "photos": "6",
+    "img": "glaz0.png",
+    "color": "Szarość i brąz z dodatkiem bieli.",
+    "opis": "opis glazu",
+    "size": "<ul>\r\n<li>200-600<\/li>\r\n<li>Pow. 500<\/li>\r\n<\/ul>"
+},
+{
+    "id": "5",
+    "car_id": "5",
+    "car_name": "Gnejs ozdobny gabionowy",
+    "slug": "gabion",
+    "image": "gabion.png",
+    "desc": "",
+    "published": "1",
+    "price": "cena gabionu",
+    "another_info": "Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać.",
+    "photos": "1",
+    "img": "gabion0.png",
+    "color": "Połyskująca szarość i brąz z dodatkiem bieli,",
+    "opis": "opis gabionu",
+    "size": "<ul>\r\n<li>60-160<\/li>\r\n<\/ul>\r\n"
+},
+{
+    "id": "6",
+    "car_id": "6",
+    "car_name": "Gnejs cięty",
+    "slug": "gnejs-ciety",
+    "image": "gnejssciety.png",
+    "desc": "Płytka polerowana, Płytka szlifowana",
+    "published": "1",
+    "price": "cena",
+    "another_info": "Gnejs cięty idealnie podkreśla budowę oraz naturalne pęknięcia skały powstałe w wyniku procesu jej tworzenia. \r\nZdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać.\r\n",
+    "photos": "3",
+    "img": "gnejsciety0.png",
+    "color": "-",
+    "opis": "opis",
+    "size": "<b>Płytka polerowana, Płytka szlifowana<\/b>\r\n<ul>\r\n<li>Grubość 3cm<\/li>\r\n<li>Wysokość 30cm<\/li> \r\n<li>Szerokość 60cm<\/li>\r\n<\/ul>\r\n<\/br>\r\n<b>Płyta płomieniowana<\/b>\r\n<ul>\r\n<li>100-200<\/li>\r\n<li>Grubość 5cm<\/li>\r\n<\/ul>\r\n\r\n\r\n\r\n"
+}
+]
+
+}
+]
