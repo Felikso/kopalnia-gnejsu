@@ -57,7 +57,7 @@ const StyledHeader = styled.header`
     z-index: 10;
     padding: 0.5rem;
     transition: background 300ms;
-    background: ${({ background }) => (background ? "#000" : "blue")};
+    background: ${({ background }) => (background ? "rgba(255,255,255,0.8)" : "transparent")};
 
     ul {
       display: flex;
@@ -71,7 +71,7 @@ const StyledHeader = styled.header`
 
         a {
           text-decoration: none;
-          color: white;
+          color: ${({ background }) => (background ? "black" : "white")};
           transition: color 300ms;
 
           :hover {

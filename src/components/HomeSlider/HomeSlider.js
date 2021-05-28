@@ -4,23 +4,23 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 import BackgroundSlider from 'gatsby-image-background-slider'
 
+import BackgroundCustomedSlider from './customed-slider-show'
+
 const HomeSlider = ({ children }) => (
   <>
     <main>{children}</main>
-    <BackgroundSlider 
+    <BackgroundCustomedSlider 
       query={useStaticQuery(graphql`
         query {
-          backgrounds: allFile (filter: {sourceInstanceName: {eq: "backgrounds"}}){
+          backgrounds: allFile(filter: {sourceInstanceName: {eq: "backgrounds"}}) {
             nodes {
               relativePath
               childImageSharp {
-                fluid (maxWidth: 4000, quality: 100){
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData
               }
             }
           }
-        }
+      }
       `)}
     />
   </>

@@ -1,13 +1,30 @@
-import React, { useState } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { breakpoints } from "../utils/breakpoints"
 
 const MobileNavMenu = () => {
   const [menuOpen, toggleMenuOpen] = useState(false)
+  const [background, setBackground] = useState(false)
+  const navRef = useRef()
+
+  navRef.current = background
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 20
+      if (navRef.current !== show) {
+        setBackground(show)
+      }
+    }
+    document.addEventListener("scroll", handleScroll)
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   return (
-    <MenuBar>
+    <MenuBar background={background}>
       <Link to="/">Home</Link>
       <MenuIconContainer>
         <MenuIcon menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
@@ -45,7 +62,8 @@ const MenuBar = styled.header`
   height: 3rem;
   position: fixed;
   width: 100%;
-  background: white;
+  transition: background 300ms;
+  background:  ${({ background }) => (background ? "#fff" : "transparent")};
   border-bottom: "blue";
   z-index: 10;
   display: flex;
