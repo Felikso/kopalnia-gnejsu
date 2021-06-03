@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="kopalnia-gnejsu-logo-svg.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg946"
+   version="1.1"
+   viewBox="0 0 17.727083 13.229167"
+   height="50"
+   width="67">
+  <defs
+     id="defs940" />
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:window-height="728"
+     inkscape:window-width="1354"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="3.432107"
+     inkscape:cx="51.773836"
+     inkscape:zoom="3.959798"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata943">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Warstwa 1">
+    <path
+       sodipodi:nodetypes="ccccccc"
+       id="path918"
+       style="fill:#6c5d53;fill-opacity:1;fill-rule:evenodd;stroke-width:0.443332"
+       inkscape:transform-center-x="0.050253881"
+       inkscape:transform-center-y="3.7320746"
+       d="m 9.0469311,0.08067305 0.01,4.21663005 4.6435209,6.9309699 v 0 l 4.20958,2.08157 v 0 z" />
+    <path
+       d="m 9.0469311,0.08067305 0.01,4.21663005 -4.6435302,6.9309699 v 0 l -4.22961003,2.08157 v 0 z"
+       inkscape:transform-center-y="3.7320746"
+       inkscape:transform-center-x="-0.050208658"
+       style="fill:#c8beb7;fill-opacity:1;fill-rule:evenodd;stroke-width:0.443332"
+       id="path920"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       id="path922"
+       style="fill:#483e37;fill-opacity:1;fill-rule:evenodd;stroke-width:0.443332"
+       inkscape:transform-center-x="3.1134586"
+       inkscape:transform-center-y="-6.3473271"
+       d="m 17.910052,13.309843 -4.20958,-2.08157 H 4.4134209 v 0 l -4.22961003,2.08157 v 0 z" />
+    <path
+       inkscape:transform-center-x="-1.7821177e-05"
+       sodipodi:type="star"
+       style="fill:#ac9d93;fill-opacity:1;fill-rule:evenodd"
+       id="path926"
+       sodipodi:sides="3"
+       sodipodi:cx="41.24789"
+       sodipodi:cy="31.124781"
+       sodipodi:r1="21.429928"
+       sodipodi:r2="10.714963"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.5707963"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 59.806752,41.839745 -18.558861,-10e-7 -18.558862,0 L 31.96846,25.767299 41.247891,9.6948528 50.52732,25.767299 Z"
+       inkscape:transform-center-y="-4.3659695"
+       transform="matrix(0.25020521,0,0,0.21561625,-1.2634891,2.2069431)" />
+  </g>
+</svg>
