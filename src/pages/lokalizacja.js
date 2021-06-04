@@ -3,6 +3,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 
 import {  GatsbyImage, getImage  } from 'gatsby-plugin-image'
 import Layout from "../components/Layout/Layout"
+import SEO from "../components/SEO/Seo"
 import styled from "styled-components"
 
 import MapComponent from "../components/MapComponent/MapComponent"
@@ -52,6 +53,7 @@ const secondImage = getImage(secondPhoto);
 
   return (
     <Layout>
+            <SEO title="Kopalnia Gnejsu - lokalizacja" />
         <CustomedHeader
                         bgImage={backgroundImage}
                         headerBg="rgba(0,0,0,0.5)"

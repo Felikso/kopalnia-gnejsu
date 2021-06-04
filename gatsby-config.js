@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Kopalnia Gnejsu - projekt strony`,
+    description: `Autorski projekt strony www dla przedsiębiorstwa Kopalnia Gnejsu sp. z o. o.`,
+    author: `@Felikso`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
-          threshold: 0.8, // Percentage of an element's area that needs to be visible to launch animation
+          threshold: 0.5, // Percentage of an element's area that needs to be visible to launch animation
           once: true, // Defines if animation needs to be launched once
           disable: false, // Flag for disabling animations
           

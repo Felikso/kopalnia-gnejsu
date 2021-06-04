@@ -24,7 +24,7 @@ const TitleWrapper = styled.div`
     font-family: ${({ theme }) => theme.textStyle.textFamily};
     font-style: italic;
     letter-spacing: ${({ theme }) => theme.textStyle.letterSpacing};
-    font-size: 2rem;
+    font-size: 1rem;
     color: ${({ theme }) => theme.colors.fourthColor};
   }
 

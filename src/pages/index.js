@@ -54,7 +54,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Kopalnia Gnejsu - strona główna" />
 
     <MainHeader
     height="100vh"

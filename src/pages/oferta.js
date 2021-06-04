@@ -8,6 +8,7 @@ import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from 'gatsby-background-image'
 
 import Layout from "../components/Layout/Layout"
+import SEO from "../components/SEO/Seo"
 
 import OfferContactSection from "../components/OfferContactSection/OfferContactSection"
 import ButtonBestia from "../customedItems/ButtonBestia"
@@ -80,6 +81,7 @@ query {
 
   return (
     <Layout offerLinks={offerLinks}>
+            <SEO title="Kopalnia Gnejsu - oferta" />
         <CustomedHeader
                         bgImage={backgroundImage}
                         headerBg="rgba(0,0,0,0.5)"

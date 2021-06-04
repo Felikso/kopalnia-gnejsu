@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 
 import Layout from "../components/Layout/Layout"
+import SEO from "../components/SEO/Seo"
 import GalleryLightBox from "../components/GalleryLightBox/GalleryLightBox"
 
 import { CustomedHeader, Section, Title, LinkButton } from "../utils"
@@ -56,6 +57,7 @@ const backgroundImage = getImage(img);
 
   return (
     <Layout>
+            <SEO title="Kopalnia Gnejsu - aranżacje" />
               <CustomedHeader
                         bgImage={backgroundImage}
                         headerBg="rgba(0,0,0,0.5)"
