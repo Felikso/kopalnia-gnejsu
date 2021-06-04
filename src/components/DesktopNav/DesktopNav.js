@@ -4,7 +4,7 @@ import logo from "./kopalnia-gnejsu-logo.png"
 import styled from "styled-components"
 import FullLogo from "../CustomedSiteComponents/FullLogo"
 
-const DesktopNavMenu = () => {
+const DesktopNavMenu = ({links}) => {
   const [background, setBackground] = useState(false)
   const navRef = useRef()
 
@@ -32,21 +32,15 @@ const DesktopNavMenu = () => {
           </Link>
           
         </li>
-        <li>
-          <Link to="/oferta">oferta</Link>
-        </li>
-        <li>
-          <Link to="/galeria">aranżacje</Link>
-        </li>
-        <li>
-          <Link to="/transport">transport</Link>
-        </li>
-        <li>
-          <Link to="/lokalizacja">lokalizacja</Link>
-        </li>
-        <li>
-          <Link to="/kontakt">kontakt</Link>
-        </li>
+        {
+            links.map(link => {
+              return (
+                <li>
+                <Link to={link.path} className="nav-link">{link.name}</Link>
+                </li>
+              )
+            })
+          }
       </ul>
     </StyledHeader>
   )

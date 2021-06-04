@@ -18,6 +18,10 @@ import SimplySlider from "../components/SimplySlider/SimplySlider"
 
 import ButtonBestia from "../customedItems/ButtonBestia"
 
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+
+
+
 export const query = graphql`
   query {
     allProductDataJson {
@@ -47,9 +51,6 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data }) => {
-  const productData = data.allProductDataJson
-
-  console.log(data)
 
   return (
     <Layout>
@@ -66,12 +67,19 @@ const IndexPage = ({ data }) => {
             <HeroBox>
             <HeroLogo />
             <HeroBtnsBox>
-              <ButtonBestia to="/o-nas">
-                dowiedz się więcej
-              </ButtonBestia>
-              <ButtonBestia to="/kontakt">
-                kontakt
-              </ButtonBestia>
+
+                <ScrollLink to="/#o-nas" title="O Kopalni Gnejsu">
+                  <ButtonBestia>
+                    dowiedz się więcej
+                  </ButtonBestia>
+               </ScrollLink>
+
+               <ScrollLink to="/#kontakt" title="kontakt z Kopalnią Gnejsu">
+                  <ButtonBestia>
+                  kontakt
+                  </ButtonBestia>
+               </ScrollLink>
+
             </HeroBtnsBox>
             </HeroBox>
             
@@ -90,18 +98,6 @@ const IndexPage = ({ data }) => {
 </FluidSection>
 
 <FluidSection>
-
-{/*       {productData.nodes.map(product => {
-         console.log(product.image.childImageSharp.gatsbyImageData)
-          return(
-        <OfferSection>
-          <Link to={`/oferta/${product.slug}`}>{product.name}</Link>
-        <OfferImage
-            image={product.image.childImageSharp.gatsbyImageData}
-            alt={product.name}
-          />
-        </OfferSection>
-      )})} */}
 </FluidSection>
 
     </Layout>
@@ -109,6 +105,11 @@ const IndexPage = ({ data }) => {
 }
 
 export default IndexPage
+
+const ScrollLink = styled(AnchorLink)`
+display: grid;
+text-decoration: none;
+`
 
 const HeroLogo = styled(HeroFullLogo)`
   margin: auto;
@@ -139,7 +140,7 @@ const HeroBox = styled.section`
   flex-direction: column;
   padding: 2rem 0;
   @media (min-width: ${({ theme }) => theme.device.m}) {
-    flex-direction: row;
+/*     flex-direction: row; */
     padding: 0;
   }
 
@@ -156,6 +157,7 @@ margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr;
 grid-gap: 20px;
+width: 70%;
 
 @media (min-width: ${({ theme }) => theme.device.m}) {
   grid-template-columns: 1fr 1fr;

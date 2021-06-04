@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import {  GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import Layout from "../components/Layout/Layout"
@@ -7,6 +7,8 @@ import GalleryLightBox from "../components/GalleryLightBox/GalleryLightBox"
 import styled from 'styled-components'
 
 import { CustomedHeader, Section, Title, LinkButton } from "../utils"
+
+import ButtonBestia from "../customedItems/ButtonBestia"
 
 
 
@@ -62,8 +64,42 @@ const ProductPage = ({ data, key }) => {
   })
   } )
 
+
+  const offerLinks = [
+    {
+      id: 1,
+      path: "/oferta/gnejs-ozdobny",
+      name: "gnejs ozdobny",
+    },
+    {
+      id: 2,
+      path: "/oferta/plytka",
+      name: "płytka"
+    },
+    {
+      id: 3,
+      path: "/oferta/szpilka",
+      name: "szpilka"
+    },
+    {
+      id: 4,
+      path: "/oferta/glaz",
+      name: "głaz"
+    },
+    {
+      id: 5,
+      path: "/oferta/gnejs-ozdobny-gabionowy",
+      name: "gnejs ozdobny gabionowy"
+    },
+    {
+      id: 6,
+      path: "/oferta/gnejs-ciety",
+      name: "gnejs cięty"
+    },
+  ]
+
   return (
-    <Layout>
+    <Layout offerLinks={offerLinks}>
               <CustomedHeader
                         bgImage={backgroundImage}
                         headerBg="rgba(0,0,0,0.5)"
@@ -74,37 +110,21 @@ const ProductPage = ({ data, key }) => {
                         backgroundImage={backgroundImage}
                         >
               </CustomedHeader>
-              <LinkButton css={`
-              position: absolute;
-              `}>
-                Powrót do oferty
-              </LinkButton>
+
       
       <Section>
+        <Link to="/oferta">
+      <ButtonBestia>
+                Powrót do oferty
+      </ButtonBestia>
+      </Link>
       <Title title={productData.name}/>
-        <div className="test">
-{/*             {
-                productData.gallery.map((item, i) => {
-                    console.log(item)
-                    return(
-                        <GatsbyImage
-                        key={key}
-                        image={item.image.childImageSharp.gatsbyImageData}
-                        alt={`kopalnia-gnejsu-${productData.name}`}
-                        load="lazy"
-          />
-                    )
-                })
-            } */}
-        </div>
 
-        <section>
           <GalleryLightBox 
           images={images}
            />
-        </section>
 
-        <section>
+        <OfferItemsBox>
           <h3>Specyfikacja</h3>
           <h6>Frakcja</h6>
           {
@@ -125,7 +145,7 @@ const ProductPage = ({ data, key }) => {
           <p>{productData.color}</p>
           <h6>Dodatkowe informacje</h6>
           <p>{productData.moreInfo}</p>
-        </section>
+        </OfferItemsBox>
 
         </Section>
     </Layout>
@@ -133,4 +153,23 @@ const ProductPage = ({ data, key }) => {
 }
 
 export default ProductPage
+
+const OfferItemsBox = styled.section`
+  background: ${({ theme }) => theme.colors.offerItemsBoxBg};
+  padding: 10px 20px;
+
+  h3{
+    color: ${({ theme }) => theme.colors.offerItemsBoxH3};
+    font-size: ${({ theme }) => theme.colors.offerItemsBoxH3FS};
+  }
+
+  h6{
+    color: ${({ theme }) => theme.colors.offerItemsBoxH6};
+    font-size: ${({ theme }) => theme.colors.offerItemsBoxH6FS};
+  }
+
+  h2{
+    font-size: ${({ theme }) => theme.colors.offerItemsBoxH6FS};
+  }
+`
 

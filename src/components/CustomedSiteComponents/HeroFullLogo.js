@@ -39,9 +39,15 @@ const HeroLogoBox = styled.div`
   flex-direction: column;
   align-items: center;
   background: ${({ theme }) => theme.colors.heroLogoBg};
-  padding: 0 10px;
+  padding: 10px;
   border-radius: 30px;
   margin: 30px auto;
+  width: 70%;
+
+/*   @media (min-width: ${({ theme }) => theme.device.m}) {
+    width: 50%;
+  } */
+
 
   h6{
     font-size: 14px;

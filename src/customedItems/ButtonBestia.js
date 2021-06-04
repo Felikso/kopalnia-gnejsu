@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const ButtonBestia = ({ children, color, bg, hoverBg }) => {
+const ButtonBestia = ({ children, color, bg, hoverBg,  }) => {
 
   return (
     <StyledButtonBestia bg={bg} hoverBg={hoverBg}>

@@ -4,11 +4,11 @@ import React from "react"
 import DesktopNavMenu from "../DesktopNav/DesktopNav"
 import MobileNavMenu from "../MobileNav/MobileNav"
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, links }) => {
   return (
     <>
-      <DesktopNavMenu />
-      <MobileNavMenu />
+      <DesktopNavMenu links={links}/>
+      <MobileNavMenu links={links} />
     </>
   )
 }

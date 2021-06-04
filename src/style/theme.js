@@ -9,7 +9,7 @@ export const theme = {
     secondaryColor: "#237500",
     thirdColor: "#000000",
     fourthColor: "#090909",
-    hoverLinks: "blue",
+    hoverLinks: "orange",
 
     heroBtnsLink: "black",
     heroBtnsBg: "rgba(255,255,255,0.6)",
@@ -36,10 +36,14 @@ export const theme = {
     burgerOpen: "silver",
     burgerClose: "white",
 
+    mobileNavLinks: "black",
+    mobileNavBg: "#bbbbbb6e",
+    mobileNavLinksHover: "#2f8a00",
+
     navBg: "rgba(255,255,255,0.4)",
     openedNavBg: "rgba(255,255,255,1)",
     mobileLinks: "red",
-    mobileLinksHover: "blue",
+    mobileLinksHover: "orange",
 
 
     /* Transport page */
@@ -52,6 +56,21 @@ export const theme = {
 
     transportH3: "#868686",
     transportH3FS: "24px",
+
+    transportSectionBg: "rgba(255,255,255,.6)",
+
+    /* Single Item Page */
+
+    offerItemsBoxBg: "rgba(255,255,255,.6)",
+
+    offerItemsBoxH6: "orange",
+    offerItemsBoxH6FS: "20px",
+
+    offerItemsBoxtP: "black",
+    offerItemsBoxPFS: "16px",
+
+    offerItemsBoxH3: "#868686",
+    offerItemsBoxH3FS: "24px",
 
     /* About Section */
 
@@ -102,6 +121,10 @@ export const theme = {
     lightGray: "#f1f2f3",
     darkGray: "#797979",
     brown: "#3e1f02",
+
+    /* Interactions */
+    scrollBtn: "orange",
+    scrollBtnHover: "black",
   },
   transitions: {
     transDefault: "all 0.5s ease-in-out",

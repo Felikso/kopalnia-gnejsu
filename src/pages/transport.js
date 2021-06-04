@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 import {  GatsbyImage, getImage  } from 'gatsby-plugin-image'
 import Layout from "../components/Layout/Layout"
@@ -7,7 +7,7 @@ import styled from "styled-components"
 
 import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader } from "../utils"
 
-
+import ButtonBestia from "../customedItems/ButtonBestia"
 const TransportPage = ({ data }) => {
 
   const { img, firstPhoto, secondPhoto } = useStaticQuery(
@@ -61,7 +61,11 @@ const secondImage = getImage(secondPhoto);
                         >
     </CustomedHeader>
       <Section>
-
+      <Link to="/">
+              <ButtonBestia>
+                Powrót do strony głównej
+              </ButtonBestia>
+     </Link>
       <Title title="transport" subtitle="dowiedz się więcej na temat transportu" />
       <TransportContentWrapper>
       <h3>Dajemy Państwu możliwość dostarczenia naszego kruszywa w dwojaki sposób:</h3>
@@ -79,12 +83,6 @@ const secondImage = getImage(secondPhoto);
         </TransportContentBox>
 
       </TransportContent>
-
-      <ul>
-        <li><span>Transportem samochodowym</span> <p>około 3000 ton na 24h</p></li>
-        <li><span>Transportem kolejowym</span> <p>Z własnej bocznicy ze stacji Doboszowice, bezpośrednio połączeniej z liniami kolejowymi w kierunku Wrocławia, Opola i Śląska</p></li>
-      </ul>
-      <h6>Oferujemy dostawy kruszyw transportem kolejowym: węglarka, dumpcar, hoopfer-dozator</h6>
       </TransportContentWrapper>
       </Section>
 
@@ -95,12 +93,14 @@ const secondImage = getImage(secondPhoto);
 export default TransportPage
 
 const TransportImage = styled(GatsbyImage)`
-
-  width: 250px;
+  order: 1;
+  width: 80%;
   margin: auto;
+
 
   @media (min-width: ${({ theme }) => theme.device.m}) {
   width: 400px;
+  order: inherit;
 }
 
 `
@@ -119,19 +119,19 @@ const TransportContent = styled.section`
 `
 
 const TransportContentBox = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
   align-items: center;
-  text-align: center;
+  background: ${({ theme }) => theme.colors.transportSectionBg};
 }
 
   @media (min-width: ${({ theme }) => theme.device.m}) {
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
   }
 
   div{
-
+    padding: 10px;
   }
 
   span{

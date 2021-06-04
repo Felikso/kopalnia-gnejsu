@@ -1,7 +1,72 @@
 
 [
   {
-        "id": 1,
+    "id": 1,
+    "name": "gnejs ozdobny",
+    "slug": "gnejs-ozdobny",
+    "image": "./images/gnejs-ozdobny.png",
+    "gallery":  [
+      {
+        "image": "./images/gnejs-ozdobny/1.png",
+        "name": "Gnejs ozdobny",
+        "size": "10-20"
+      },
+      {
+        "image": "./images/gnejs-ozdobny/2.png",
+        "name": "Gnejs ozdobny",
+        "size": "20-40"
+      },
+      {
+        "image": "./images/gnejs-ozdobny/3.png",
+        "name": "Gnejs ozdobny",
+        "size": "40-60"
+      }
+    ],
+    "fraction": [
+      {
+        "size": "10-20"
+      },
+      {
+        "size": "20-40"
+      },
+      {
+        "size": "40-60"
+      }
+    ],
+    "color": "Połyskująca szarość i brąz z dodatkiem bieli.",
+    "moreInfo": "Struktura Gnejsu nadaje mu charakterystyczny kształt w wyniku czego frakcja może się różnić. Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać."
+  },
+  {
+    "id": 2,
+    "name": "płytka",
+    "slug": "plytka",
+    "price": "8.00",
+    "image": "./images/plytki.png",
+    "gallery":  [
+      {
+        "image": "./images/plytka/1.png",
+        "name": "Płytka ozdobna",
+        "size": "200-500"
+      },
+      {
+        "image": "./images/plytka/2.png",
+        "name": "Płytka Gnejsowa",
+        "size": "100-400"
+      }
+    ],
+    "fraction": [
+      {
+        "size": "200-500"
+      },
+      {
+        "size": "100-400"
+      }
+    ],
+    "color": "Brąz i szarość.",
+    "moreInfo": "Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać."
+  },
+  {
+        "id": 3,
         "name": "szpilka",
         "slug": "szpilka",
         "image": "./images/szpilki.png",
@@ -29,71 +94,6 @@
         ],
         "color": "Szarość i brąz dodatkiem bieli.",
         "moreInfo": "Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać."
-      },
-      {
-        "id": 2,
-        "name": "płytka",
-        "slug": "płytka",
-        "price": "8.00",
-        "image": "./images/plytki.png",
-        "gallery":  [
-          {
-            "image": "./images/plytka/1.png",
-            "name": "Płytka ozdobna",
-            "size": "200-500"
-          },
-          {
-            "image": "./images/plytka/2.png",
-            "name": "Płytka Gnejsowa",
-            "size": "100-400"
-          }
-        ],
-        "fraction": [
-          {
-            "size": "200-500"
-          },
-          {
-            "size": "100-400"
-          }
-        ],
-        "color": "Brąz i szarość.",
-        "moreInfo": "Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać."
-      },
-      {
-        "id": 3,
-        "name": "gnejs ozdobny",
-        "slug": "gnejs-ozdobny",
-        "image": "./images/gnejs-ozdobny.png",
-        "gallery":  [
-          {
-            "image": "./images/gnejs-ozdobny/1.png",
-            "name": "Gnejs ozdobny",
-            "size": "10-20"
-          },
-          {
-            "image": "./images/gnejs-ozdobny/2.png",
-            "name": "Gnejs ozdobny",
-            "size": "20-40"
-          },
-          {
-            "image": "./images/gnejs-ozdobny/3.png",
-            "name": "Gnejs ozdobny",
-            "size": "40-60"
-          }
-        ],
-        "fraction": [
-          {
-            "size": "10-20"
-          },
-          {
-            "size": "20-40"
-          },
-          {
-            "size": "40-60"
-          }
-        ],
-        "color": "Połyskująca szarość i brąz z dodatkiem bieli.",
-        "moreInfo": "Struktura Gnejsu nadaje mu charakterystyczny kształt w wyniku czego frakcja może się różnić. Zdjęcia mają charakter jedynie poglądowy, ze względu na naturalne pochodzenie oraz proces produkcji odcień i kolor mogą się różnić od tego na zdjęciu. Przed użyciem należy opłukać."
       },
       {
         "id": 4,
@@ -165,22 +165,22 @@
       },
       {
         "id": 6,
-        "name": "Gnejs cięty",
+        "name": "gnejs cięty",
         "slug": "gnejs-ciety",
         "image": "./images/gnejs-ciety.png",
         "gallery":  [
           {
-            "image": "./images/szpilki/1.png",
+            "image": "./images/gnejs-ciety/1.png",
             "name": "Płytka polerowana",
             "size": "3x30x60 cm"
           },
           {
-            "image": "./images/szpilki/2.png",
+            "image": "./images/gnejs-ciety/2.png",
             "name": "Płytka szlifowana",
             "size": "3x30x60 cm"
           },
           {
-            "image": "./images/szpilki/3.png",
+            "image": "./images/gnejs-ciety/3.png",
             "name": "Płytka płomieniowana",
             "size": "100-200x5 cm"
           }

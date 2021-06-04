@@ -8,6 +8,9 @@ import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHea
 import { BiMailSend } from "@react-icons/all-files/bi/BiMailSend";
 import { FaFax } from "@react-icons/all-files/fa/FaFax";
 import { FiPhoneCall } from "@react-icons/all-files/fi/FiPhoneCall";
+import ContactIconsBox from "../../customedItems/ContactIconsBox"
+
+import MapComponent from "../MapComponent/MapComponent"
 
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from 'gatsby-background-image'
@@ -61,9 +64,10 @@ const bgImage = convertToBgImage(image) */
       
       <AboutSectionContent>
         <AboutSectionContentBox
-          data-sal="slide-up"
+          data-sal="fade-in"
           data-sal-delay="0"
           data-sal-easing="ease"
+          id="o-nas"
           >
         <h3>o firmie:</h3>
           <p><strong>Kopalnia Gnejsu Pomianów-Doboszowice</strong> znajduje się w województwie dolnośląskim w miejscowości Doboszowice niedaleko Kamieńca Ząbkowickiego i Paczkowa. <strong>Nasza firma zajmuje się produkcją gnejsowych kruszyw drogowych i kolejowych</strong>.</p>
@@ -74,7 +78,7 @@ const bgImage = convertToBgImage(image) */
         </AboutSectionContentBox>
         
         <AboutSectionContentBox
-          data-sal="slide-up"
+          data-sal="fade-in"
           data-sal-delay="300"
           data-sal-easing="ease"
           >
@@ -91,28 +95,37 @@ const bgImage = convertToBgImage(image) */
 
       <AboutSectionContact>
       <AboutSectionContentBox
-                data-sal="slide-up"
+                data-sal="fade-in"
                 data-sal-delay="0"
-                data-sal-easing="ease">
+                data-sal-easing="ease"
+                id="kontakt">
       <h3>dane kontaktowe:</h3>
       <IconsBox>
-          <IconBox href="mailto:biuro@kopalniagnejsu.pl">
-          <BiMailSend />
-          <h5>biuro@kopalniagnejsu.pl</h5>
-          </IconBox>
-          <IconBox href="tel:748177015">
+      <ContactIconsBox
+        href="mailto:lg@ozdobne.kopalniagnejsu.pl"
+        content="lg@ozdobne.kopalniagnejsu.pl"
+      >
+            <BiMailSend />
+      </ContactIconsBox>
+
+      <ContactIconsBox
+        href="tel:748177015"
+        content="+ 74 817 70 15"
+      >
             <FiPhoneCall />
-            <h5>+ 74 817 70 15</h5>
-          </IconBox>
-          <IconBox href="fax:665065210">
-          <FaFax />
-          <h5>665-065-210</h5>
-          </IconBox>
+      </ContactIconsBox>
+
+      <ContactIconsBox
+        href="fax:665065210"
+        content="665-065-210"
+      >
+            <FaFax />
+      </ContactIconsBox>
       </IconsBox>
         </AboutSectionContentBox>
 
  <AboutSectionContentBox
-           data-sal="slide-up"
+           data-sal="fade-in"
            data-sal-delay="300"
            data-sal-easing="ease">
  <AboutSectionContentInfo>
@@ -139,20 +152,10 @@ const bgImage = convertToBgImage(image) */
 
       </AboutSectionContact>
       <AboutSectionContentBox
-                data-sal="slide-up"
+                data-sal="fade-in"
                 data-sal-delay="0"
                 data-sal-easing="ease">
-        <MapHref href="https://www.google.pl/maps/dir//Kopalnia+gnejsu/@50.4993277,16.8963918,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x470e20eadc4f0217:0x19ce455603782150!2m2!1d16.9664319!2d50.4992395" target="_blank">
-        <BackgroundImage
-              Tag="section"
-              {...bg2Image}
-              preserveStackingContext
-            >
-          <MapBox>
-            <h4>kliknij i sprawdź dojazd</h4>
-          </MapBox>
-          </BackgroundImage>
-        </MapHref>
+        <MapComponent />
         </AboutSectionContentBox>
       </AboutSectionContentWrapper>
       </FluidSection>

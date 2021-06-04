@@ -15,7 +15,7 @@ import Gallery from '../../customedLib/customed-gallery-lightbox/src'
 export default function GalleryLightBox({images}) {
 
 const lightboxOptions = {
-  imageLoadErrorMessage: 'Przepraszamy, wystąpił problem ze zdjęciem',
+  imageLoadErrorMessage: 'Przepraszamy, wystąpił problem ze zdjęciem, proszę odświeżyć stronę',
   nextLabel: 'Następne zdjęcie',
   prevLabel: 'Poprzednie zdjęcie',
   zoomInLabel: 'Przybliż',

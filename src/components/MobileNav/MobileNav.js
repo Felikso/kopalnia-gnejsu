@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { styles } from "../../utils"
 import { ReactComponent as MobileLogo } from "./kopalnia-gnejsu-logo-svg.svg"
 
-const MobileNavMenu = () => {
+const MobileNavMenu = ({links}) => {
   const [menuOpen, toggleMenuOpen] = useState(false)
   const [background, setBackground] = useState(false)
   const navRef = useRef()
@@ -23,34 +23,6 @@ const MobileNavMenu = () => {
       document.removeEventListener("scroll", handleScroll)
     }
   }, [])
-
-
-  const links = [
-    {
-      id: 0,
-      path: "/",
-      name: "start",
-      scrollId: "start-section",
-    },
-    {
-      id: 1,
-      path: "/oferta/",
-      name: "oferta",
-      scrollId: "our-offer-section",
-    },
-    {
-      id: 2,
-      path: "/o-nas/",
-      name: "o nas",
-      scrollId: "about-us-section",
-    },
-    {
-      id: 3,
-      path: "/kontakt/",
-      name: "kontakt",
-      scrollId: "contact-us-section",
-    },
-  ]
 
   return (
     <MenuBar background={background}>
@@ -125,6 +97,14 @@ const MenuIcon = styled.button`
   outline: thin-dotted;
   z-index: 11;
 
+  &:focus{
+    outline: none;
+  }
+
+  &:active{
+    outline: none;
+  }
+
   div {
     width: 2rem;
     height: 0.25rem;
@@ -186,15 +166,15 @@ const MenuLinks = styled.nav`
         display: block;
         text-decoration: none;
         padding: 0.5rem 1rem 0.5rem 1rem;
-        color: red;
+        color: ${({ theme }) => theme.colors.mobileNavLinks};
         font-weight: 700;
         text-transform: capitalize;
         cursor: pointer;
-        transition:all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     
         &:hover {
-          background: black;
-          color: yellow;
+          background: ${({ theme }) => theme.colors.mobileNavBg};
+          color: ${({ theme }) => theme.colors.mobileNavLinksHover};
           padding: 0.5rem 1rem 0.5rem 1.3rem;
         }
       }
