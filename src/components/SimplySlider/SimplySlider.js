@@ -55,7 +55,7 @@ query {
 
 			 return(
         <Slider css={`
-          flex-direction: ${((item.id)%2===0) ? "row" : "row-reverse"}
+          direction: ${((item.id)%2===0) ? "direction: rtl;" : ""}
         `}>
           <SliderImage image={item.image.childImageSharp.gatsbyImageData} />
           <SliderContent>
@@ -91,18 +91,23 @@ query {
 export default SimplySlider;
 
 const Slider = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
+
+  @media (min-width: ${({ theme }) => theme.device.m}) {
+    grid-template-columns: 2fr 1fr;
+  }
 `
 
 const SliderImage = styled(GatsbyImage)`
-  width: 75%;
+/*   width: 75%; */
 
 `
 
 const SliderContent = styled.div`
-width: 25%;
+/* width: 25%; */
 color: black;
 font-size: 1em;
 display: flex;

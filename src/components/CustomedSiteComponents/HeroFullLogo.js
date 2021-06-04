@@ -3,13 +3,15 @@ import logo from "./kopalnia-gnejsu-logo.png"
 import styled from "styled-components"
 import { breakpoints } from "../../utils/breakpoints"
 
+import { ReactComponent as BrandLogo } from "./kopalnia-gnejsu-logo-svg.svg"
+
 const HeroFullLogo = ({background, fontColor, subtitleColor}) => {
 
 
   return (
             <HeroLogoBox background={background} subtitleColor={subtitleColor}>
                 <HeroBrandName background={background}>
-                  <HeroLogoImg src={logo} />
+                <CustomedBrandLogo />
                   <HeroBrandNameTitle background={background} fontColor={fontColor} >
                     <h2>kopalnia</h2>
                     <h2> gnejsu</h2>
@@ -22,17 +24,39 @@ const HeroFullLogo = ({background, fontColor, subtitleColor}) => {
 
 export default HeroFullLogo
 
+const CustomedBrandLogo = styled(BrandLogo)`
+height: 80px;
+width: 80px;
+
+@media (min-width: ${({ theme }) => theme.device.s}) {
+  height: 100px;
+  width: 100px;
+}
+`
+
 const HeroLogoBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: ${({ theme }) => theme.colors.heroLogoBg};
+  padding: 0 10px;
+  border-radius: 30px;
+  margin: 30px auto;
 
   h6{
-    font-size: 10px;
+    font-size: 14px;
     color: ${({ theme }) => theme.colors.heroLogoSubtitle};
   }
 
-  @media ${breakpoints.md} {
+  @media (min-width: ${({ theme }) => theme.device.s}) {
+    padding: 0.5em 1.5em;
+
+    h6{
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.device.l}) {
     display: none;
   }
 `
@@ -42,12 +66,6 @@ const HeroBrandName = styled.div`
   align-items: center;
 `
 
-const HeroLogoImg = styled.img`
-  padding: 0;
-  margin: 0;
-  height: 8vh;
-
-`
 
 const HeroBrandNameTitle = styled.div`
   display: flex;
@@ -55,14 +73,26 @@ const HeroBrandNameTitle = styled.div`
 
   h2{
     text-transform: uppercase;
-    font-size: 20px;
-    line-height: 0;
+    font-size: 26px;
+    line-height: 1em;
+
     color: ${({ theme }) => theme.colors.heroLogoBrandName};
   }
 
   h2:last-child{
     align-self: flex-end;
   }
+
+  @media (min-width: ${({ theme }) => theme.device.s}) {
+    h2{
+      text-transform: uppercase;
+      font-size: 32px;
+      line-height: 1em;
+  
+      color: ${({ theme }) => theme.colors.heroLogoBrandName};
+    }
+  }
+
 
 
 `

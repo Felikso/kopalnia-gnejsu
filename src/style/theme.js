@@ -15,7 +15,8 @@ export const theme = {
     heroBtnsBg: "rgba(255,255,255,0.6)",
 
     heroLogoSubtitle: "black",
-    heroLogoBrandName: "silver",
+    heroLogoBrandName: "black",
+    heroLogoBg: "#E3E3E3",
 
 
     footerBg: "#AAA",

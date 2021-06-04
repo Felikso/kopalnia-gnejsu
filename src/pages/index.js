@@ -137,7 +137,7 @@ const HeroBox = styled.section`
   justify-content: flex-end;
 
   flex-direction: column;
-  padding: 5rem;
+  padding: 2rem 0;
   @media (min-width: ${({ theme }) => theme.device.m}) {
     flex-direction: row;
     padding: 0;
@@ -159,7 +159,7 @@ grid-gap: 20px;
 
 @media (min-width: ${({ theme }) => theme.device.m}) {
   grid-template-columns: 1fr 1fr;
-  margin: 20px;
+  margin-bottom: 30px;
 }
 `
 

@@ -11,7 +11,6 @@ const FullLogo = ({background, fontColor, subtitleColor}) => {
   return (
             <NavLogoBox background={background} subtitleColor={subtitleColor}>
                 <NavBrandName background={background}>
-                  {/* <LogoImg src={logo} /> */}
                   <BrandLogo />
                   <NavBrandNameTitle background={background} fontColor={fontColor} >
                     <h2>kopalnia</h2>
