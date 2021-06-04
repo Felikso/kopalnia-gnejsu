@@ -11,8 +11,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
-          threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
-          once: false, // Defines if animation needs to be launched once
+          threshold: 0.7, // Percentage of an element's area that needs to be visible to launch animation
+          once: true, // Defines if animation needs to be launched once
           disable: false, // Flag for disabling animations
           
           // Advanced Options
@@ -68,6 +68,14 @@ module.exports = {
         name: `backgrounds`,
         path: `${__dirname}/src/homeSlider`, // wherever background images are stored
       },
+    },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'GCMS',
+        fieldName: 'gcms',
+        url: 'https://api-eu-central-1.graphcms.com/v2/ckph9x9yh6z7901xp3tjq8zem/master',
+      }
     },
     `gatsby-plugin-preact`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -5,6 +5,8 @@ import {  GatsbyImage } from 'gatsby-plugin-image'
 import 'react-slideshow-image/dist/styles.css'
 import './slider.css'
 
+import ButtonBestia from "../../customedItems/ButtonBestia"
+
 import styled from 'styled-components'
 
 const SimplySlider = () => {
@@ -77,8 +79,8 @@ query {
     <SliderBtnsSection>
        <span> Automatyczne przewijanie jest {autoplay ? 'włączone' : 'wyłączone'}</span>
       <SliderBtnsBox>
-        <button type="button" onClick={() => setAutoplay(false)}>Zatrzymaj</button>
-        <button type="button" onClick={() => setAutoplay(true)}>Wznów</button>
+        <div onClick={() => setAutoplay(false)}><ButtonBestia color="black" bg="#282936">Zatrzymaj</ButtonBestia></div>
+        <div onClick={() => setAutoplay(true)}><ButtonBestia color="black" bg="#acacac" hoverBg="white">Wznów</ButtonBestia></div>
       </SliderBtnsBox>
     </SliderBtnsSection>
 
@@ -91,6 +93,7 @@ export default SimplySlider;
 const Slider = styled.div`
   display: flex;
   width: 100%;
+  height: 40vh;
 `
 
 const SliderImage = styled(GatsbyImage)`
@@ -202,7 +205,6 @@ const SliderItemName = styled.h4`
 `
 
 const SliderBtnsBox = styled.div`
-background: green;
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -210,10 +212,13 @@ justify-content: center;
 `
 
 const SliderBtnsSection = styled.section`
-  background: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  grid-gap: 10px;
+  margin: 10px auto;
 `
 
 

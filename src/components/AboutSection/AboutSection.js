@@ -16,10 +16,19 @@ import BackgroundImage from 'gatsby-background-image'
 
 const AboutSection = ({ data }) => {
 
-  const { firstPhoto } = useStaticQuery(
+  const { firstPhoto, secondPhoto } = useStaticQuery(
     graphql`
 query {
   firstPhoto: file(relativePath: { eq: "koparka.png" }) {
+    childImageSharp {
+      gatsbyImageData(
+          quality: 60, 
+          webpOptions: {quality: 75})
+      }
+    }
+  
+
+  secondPhoto: file(relativePath: { eq: "lokalizacja2.png" }) {
     childImageSharp {
       gatsbyImageData(
           quality: 60, 
@@ -35,6 +44,9 @@ query {
 const firstImage = getImage(firstPhoto);
 const bgImage = convertToBgImage(firstImage)
 
+const secondImage = getImage(secondPhoto);
+const bg2Image = convertToBgImage(secondImage)
+
 /* const image = getImage(placeholderImage)
 
 const bgImage = convertToBgImage(image) */
@@ -48,7 +60,11 @@ const bgImage = convertToBgImage(image) */
       <AboutSectionContentWrapper>
       
       <AboutSectionContent>
-        <AboutSectionContentBox>
+        <AboutSectionContentBox
+          data-sal="slide-up"
+          data-sal-delay="0"
+          data-sal-easing="ease"
+          >
         <h3>o firmie:</h3>
           <p><strong>Kopalnia Gnejsu Pomianów-Doboszowice</strong> znajduje się w województwie dolnośląskim w miejscowości Doboszowice niedaleko Kamieńca Ząbkowickiego i Paczkowa. <strong>Nasza firma zajmuje się produkcją gnejsowych kruszyw drogowych i kolejowych</strong>.</p>
 
@@ -57,7 +73,11 @@ const bgImage = convertToBgImage(image) */
           <p>Kopalnia Gnejsu Pomianów-Doboszowice sp. z o.o. próbuje sprostać oczekiwaniom naszych klientów i stale się rozwija osiągając coraz wyższe możliwości produkcyjne oraz lepszą jakość kruszyw.</p>
         </AboutSectionContentBox>
         
-        <AboutSectionContentBox>
+        <AboutSectionContentBox
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          >
         <h3>w naszej ofercie:</h3>
           <ul>
             <li>kruszywa gnejsowe klasa I, gatunek I</li>
@@ -70,7 +90,10 @@ const bgImage = convertToBgImage(image) */
       </AboutSectionContent>
 
       <AboutSectionContact>
-      <AboutSectionContentBox>
+      <AboutSectionContentBox
+                data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease">
       <h3>dane kontaktowe:</h3>
       <IconsBox>
           <IconBox href="mailto:biuro@kopalniagnejsu.pl">
@@ -88,7 +111,10 @@ const bgImage = convertToBgImage(image) */
       </IconsBox>
         </AboutSectionContentBox>
 
- <AboutSectionContentBox>
+ <AboutSectionContentBox
+           data-sal="slide-up"
+           data-sal-delay="300"
+           data-sal-easing="ease">
  <AboutSectionContentInfo>
           <BackgroundImage
               Tag="section"
@@ -108,19 +134,59 @@ const bgImage = convertToBgImage(image) */
           
           </BackgroundImage>
           </AboutSectionContentInfo>
+          
         </AboutSectionContentBox>
-        
-
-        
 
       </AboutSectionContact>
-  
+      <AboutSectionContentBox
+                data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease">
+        <MapHref href="https://www.google.pl/maps/dir//Kopalnia+gnejsu/@50.4993277,16.8963918,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x470e20eadc4f0217:0x19ce455603782150!2m2!1d16.9664319!2d50.4992395" target="_blank">
+        <BackgroundImage
+              Tag="section"
+              {...bg2Image}
+              preserveStackingContext
+            >
+          <MapBox>
+            <h4>kliknij i sprawdź dojazd</h4>
+          </MapBox>
+          </BackgroundImage>
+        </MapHref>
+        </AboutSectionContentBox>
       </AboutSectionContentWrapper>
       </FluidSection>
   )
 }
 
 export default AboutSection
+
+const MapBox = styled.div`
+  position: relative;
+  height: 200px;
+  background: rgba(84,58,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease 500ms;
+
+  &:hover{
+    background: rgba(84,58,0,0);
+  }
+`
+
+const MapImage = styled(GatsbyImage)`
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  transition: 2s;
+`
+
+const MapHref = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.aboutSectionMapLink}; 
+
+`
 
 
 const AboutSectionContentInfo = styled.div`
@@ -132,6 +198,7 @@ const AboutImage = styled(GatsbyImage)`
     position: absolute;
     bottom: 0;
     z-index: -1;
+    transition: 2s;
 `
 
 const IconsBox = styled.div`
@@ -309,7 +376,7 @@ const AboutSectionContact = styled.section`
   grid-template-columns: 1fr;
 
   @media (min-width: ${({ theme }) => theme.device.l}) {
-    grid-template-columns: 1fr 1.5fr ;
+    grid-template-columns: 1fr 1.5fr;
     grid-gap: 10px;
   }
 

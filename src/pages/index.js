@@ -16,6 +16,8 @@ import BackgroundCustomedSlider from "../customedLib/customed-slider-show"
 
 import SimplySlider from "../components/SimplySlider/SimplySlider"
 
+import ButtonBestia from "../customedItems/ButtonBestia"
+
 export const query = graphql`
   query {
     allProductDataJson {
@@ -62,14 +64,14 @@ const IndexPage = ({ data }) => {
               query={data}
             />
             <HeroBox>
-            <HeroFullLogo />
+            <HeroLogo />
             <HeroBtnsBox>
-              <HeroLink to="/o-nas">
+              <ButtonBestia to="/o-nas">
                 dowiedz się więcej
-              </HeroLink>
-              <HeroLink to="/kontakt">
+              </ButtonBestia>
+              <ButtonBestia to="/kontakt">
                 kontakt
-              </HeroLink>
+              </ButtonBestia>
             </HeroBtnsBox>
             </HeroBox>
             
@@ -79,7 +81,10 @@ const IndexPage = ({ data }) => {
     
 <FluidSection>
     <Title title="oferta" subtitle="poznaj naszą ofertę" />
-{/*     <SimplySlider /> */}
+    <SimplySlider 
+          data-sal="slide-right"
+          data-sal-delay="0"
+          data-sal-easing="ease"/>
     {/* <OfferSlider /> */}
     {/* <OfferButton to="/oferta">sprawdź całą ofertę</OfferButton> */}
 </FluidSection>
@@ -98,58 +103,21 @@ const IndexPage = ({ data }) => {
         </OfferSection>
       )})} */}
 </FluidSection>
-<div
-  data-sal="slide-up"
-  data-sal-delay="300"
-  data-sal-easing="ease"
-  >
-<img src="https://ocdn.eu/pulscms-transforms/1/iW-k9kpTURBXy9mOTk1NzZhNTY3YjhlYjljZWQ3MDcxMGJjNWEzZTZhNy5qcGeTlQMAFs0C1M0Bl5MFzQMUzQG8kwmmNTk2MTk0BoGhMAE/gettyimages-954867550.jpg" />
-</div>
 
-<div
-  data-sal="slide-up"
-  data-sal-delay="300"
-  data-sal-easing="ease"
-  >
-<img src="https://ocdn.eu/pulscms-transforms/1/iW-k9kpTURBXy9mOTk1NzZhNTY3YjhlYjljZWQ3MDcxMGJjNWEzZTZhNy5qcGeTlQMAFs0C1M0Bl5MFzQMUzQG8kwmmNTk2MTk0BoGhMAE/gettyimages-954867550.jpg" />
-</div>
-
-<div
-  data-sal="slide-up"
-  data-sal-delay="300"
-  data-sal-easing="ease"
-  >
-<img src="https://ocdn.eu/pulscms-transforms/1/iW-k9kpTURBXy9mOTk1NzZhNTY3YjhlYjljZWQ3MDcxMGJjNWEzZTZhNy5qcGeTlQMAFs0C1M0Bl5MFzQMUzQG8kwmmNTk2MTk0BoGhMAE/gettyimages-954867550.jpg" />
-</div>
-
-<div
-  data-sal="slide-up"
-  data-sal-delay="300"
-  data-sal-easing="ease"
-  >
-<img src="https://ocdn.eu/pulscms-transforms/1/iW-k9kpTURBXy9mOTk1NzZhNTY3YjhlYjljZWQ3MDcxMGJjNWEzZTZhNy5qcGeTlQMAFs0C1M0Bl5MFzQMUzQG8kwmmNTk2MTk0BoGhMAE/gettyimages-954867550.jpg" />
-</div>
-
-<div
-  data-sal="slide-up"
-  data-sal-delay="300"
-  data-sal-easing="ease"
-  >
-<img src="https://ocdn.eu/pulscms-transforms/1/iW-k9kpTURBXy9mOTk1NzZhNTY3YjhlYjljZWQ3MDcxMGJjNWEzZTZhNy5qcGeTlQMAFs0C1M0Bl5MFzQMUzQG8kwmmNTk2MTk0BoGhMAE/gettyimages-954867550.jpg" />
-</div>
-
-<div
-  data-sal="slide-up"
-  data-sal-delay="300"
-  data-sal-easing="ease"
-  >
-<img src="https://ocdn.eu/pulscms-transforms/1/iW-k9kpTURBXy9mOTk1NzZhNTY3YjhlYjljZWQ3MDcxMGJjNWEzZTZhNy5qcGeTlQMAFs0C1M0Bl5MFzQMUzQG8kwmmNTk2MTk0BoGhMAE/gettyimages-954867550.jpg" />
-</div>
     </Layout>
   )
 }
 
 export default IndexPage
+
+const HeroLogo = styled(HeroFullLogo)`
+  margin: auto;
+
+  @media (min-width: ${({ theme }) => theme.device.l}) {
+    display: none;
+  }
+
+`
 
 const OfferButton = styled(HeroLink)`
 display: block;
@@ -184,9 +152,15 @@ const HeroBox = styled.section`
 `
 
 const HeroBtnsBox = styled.div`
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr;
+grid-gap: 20px;
+
+@media (min-width: ${({ theme }) => theme.device.m}) {
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+}
 `
 
 const HeroButton = styled(Link)`

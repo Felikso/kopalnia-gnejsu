@@ -61,6 +61,7 @@ export const theme = {
     aboutSectionIcon: "#fb6c08",
     aboutSectionLink: "black",
     aboutSectionLinkBg: "#1d1d1d3b",
+    aboutSectionMapLink: "black",
 
     aboutSectionSpan: "orange",
     aboutSectionSpanFS: "20px",
