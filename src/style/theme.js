@@ -5,6 +5,15 @@ export const theme = {
     city: "Wrocław",
   },
   colors: {
+    primary: "#E3E3E3",
+    secondary: "#ff6a00",
+    third: "#171717",
+    fourth: "#636363",
+    fifth: "#ffffff",
+
+
+
+
     primaryColor: "#fff",
     secondaryColor: "#237500",
     thirdColor: "#000000",
