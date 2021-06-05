@@ -4,6 +4,7 @@ import { CustomedHeader, SimplyHeader } from "./CustomedHeader"
 import Banner, { HomeBanner } from "./Banner"
 import { BannerButton, SectionButton, MenuButton, LinkButton, HeroLink } from "./Button"
 import { Section } from "./Section"
+import { SectionContentBox } from "./SectionContentBox"
 import { FluidSection } from "./FluidSection"
 import { ContentWrapper } from "./ContentWrapper"
 import { Title } from "./Title"
@@ -28,4 +29,5 @@ export {
   FluidSection,
   ContentWrapper,
   HeroLink,
+  SectionContentBox,
 }

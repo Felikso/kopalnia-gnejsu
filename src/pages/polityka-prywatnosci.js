@@ -6,7 +6,7 @@ import Layout from "../components/Layout/Layout"
 import SEO from "../components/SEO/Seo"
 import styled from "styled-components"
 
-import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader } from "../utils"
+import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader, SectionContentBox } from "../utils"
 
 import ButtonBestia from "../customedItems/ButtonBestia"
 const CookiesPage = ({ data }) => {
@@ -32,7 +32,7 @@ query {
     }
   
 
-  img:  file(relativePath: { eq: "PageHeaders/transport.jpg" }) {
+  img:  file(relativePath: { eq: "PageHeaders/cookies2.jpg" }) {
       childImageSharp {
         gatsbyImageData(
             width: 1200, 
@@ -51,7 +51,7 @@ const secondImage = getImage(secondPhoto);
 
   return (
     <Layout>
-            <SEO title="Kopalnia Gnejsu - transport" />
+            <SEO title="Kopalnia Gnejsu - polityka prywatności" />
         <CustomedHeader
                         bgImage={backgroundImage}
                         headerBg="rgba(0,0,0,0.5)"
@@ -68,23 +68,33 @@ const secondImage = getImage(secondPhoto);
                 Powrót do strony głównej
               </ButtonBestia>
      </Link>
-      <Title title="transport" subtitle="dowiedz się więcej na temat transportu" />
+      <Title title="polityka prywatności" />
       <CookiesContentWrapper>
-      <h3>Dajemy Państwu możliwość dostarczenia naszego kruszywa w dwojaki sposób:</h3>
+          <SectionContentBox>
+          <h3>Stosowane definicje:</h3>
 
-      <CookiesContent>
-        <CookiesContentBox>
-        <div><span>Cookiesem samochodowym</span> <p>około 3000 ton na 24h</p></div>
-        <CookiesImage image={firstImage} />
-        </CookiesContentBox>
+<li>Ciasteczka - pliki pobierane oraz przechowywane na urządzeniu Użytkownika odwiedzającego stronę, wiążące się z informacjami dotyczącymi sposobu korzystania z odwiedzanej witryny internetowej.</li>
+<li>Użytkownik - osoba odwiedzająca stronę.</li>
+<li>Administrator - osoba odpowiedzialna za bezpieczne przechowywanie danych osobowych na temat Użytkowników witryny internetowej, zajmująca się ich analizą oraz przetwarzaniem zgodnym z wcześniej wdrożonymi postanowieniami.</li>
+<li>Strona – witryna internetowa odwiedzana przez Użytkownika.</li>
 
-        <CookiesContentBox>
-        <CookiesImage image={secondImage} />
-        <div><span>Cookiesem kolejowym</span> <p>Z własnej bocznicy ze stacji Doboszowice, bezpośrednio połączeniej z liniami kolejowymi w kierunku Wrocławia, Opola i Śląska</p><h6>Oferujemy dostawy kruszyw transportem kolejowym: węglarka, dumpcar, hoopfer-dozator</h6></div>
-        
-        </CookiesContentBox>
+          <h3>Postanowienia ogólne:</h3>
 
-      </CookiesContent>
+          <li>Strona wykorzystuje Ciasteczka do celów statystycznych oraz marketingowych. Zastosowanie to umożliwia spersonalizowanie oferty w celu uzyskania jak najlepszego zadowolenia potencjalnego Odbiorcy produktu/usługi.</li>
+
+          <h3>Cele wykorzystania Ciasteczek:</h3>
+
+          <li>Na stronie wdrożone jest narzędzie analityczne Yandex Metrica, umożliwiające badanie rotacji Użytkowników na stronie oraz ich zachowań na poszczególnych podstronach. Wyniki badań umożliwiają Administratorowi oraz osobom postronnym poprawienie wydajności odwiedzanej witryny internetowej oraz dostosowywanie odpowiedniej oferty dla potencjalnego Odbiorcy produktu/usługi.</li>
+
+          <h3>Zgodna na wykorzystanie Ciasteczek:</h3>
+
+          <li>Użytkownik korzystając ze strony bezpośrednio wyraża zgodę na wykorzystanie Ciasteczek wyżej wymienionych celach marketingowych.</li>
+
+
+          <h3>Postanowienia końcowe:</h3>
+
+          <li>Administrator zastrzega sobie prawo do możliwości wprowadzania zmian w przedstawionej Polityce Ciasteczek, zobowiązując się jednocześnie do bezzwłocznego upublicznienia wdrożonych przekształceń.</li>
+          </SectionContentBox>
       </CookiesContentWrapper>
       </Section>
 

@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import {  GatsbyImage, getImage  } from 'gatsby-plugin-image'
 import styled from "styled-components"
 
-import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader, FluidSection } from "../../utils"
+import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader, FluidSection, SectionContentBox } from "../../utils"
 
 import { BiMailSend } from "@react-icons/all-files/bi/BiMailSend";
 import { FaFax } from "@react-icons/all-files/fa/FaFax";
@@ -63,7 +63,7 @@ const bgImage = convertToBgImage(image) */
       <AboutSectionContentWrapper>
       
       <AboutSectionContent>
-        <AboutSectionContentBox
+        <SectionContentBox
           data-sal="fade-in"
           data-sal-delay="0"
           data-sal-easing="ease"
@@ -75,9 +75,9 @@ const bgImage = convertToBgImage(image) */
           <p>Wydobycie i produkcja prowadzona jest w ZG Doboszowice posiadającym własną bocznicę kolejową.</p>
 
           <p>Kopalnia Gnejsu Pomianów-Doboszowice sp. z o.o. próbuje sprostać oczekiwaniom naszych klientów i stale się rozwija osiągając coraz wyższe możliwości produkcyjne oraz lepszą jakość kruszyw.</p>
-        </AboutSectionContentBox>
+        </SectionContentBox>
         
-        <AboutSectionContentBox
+        <SectionContentBox
           data-sal="fade-in"
           data-sal-delay="300"
           data-sal-easing="ease"
@@ -90,11 +90,11 @@ const bgImage = convertToBgImage(image) */
             <li>wykaz certyfikatów zgodności oraz świadectw kwalifikacji</li>
           </ul>
           <h6>Bezpośrednie połączenie z liniami kolejowymi w kierunku Wrocławia, Opola i Śląska</h6>
-        </AboutSectionContentBox>
+        </SectionContentBox>
       </AboutSectionContent>
 
       <AboutSectionContact>
-      <AboutSectionContentBox
+      <SectionContentBox
                 data-sal="fade-in"
                 data-sal-delay="0"
                 data-sal-easing="ease"
@@ -122,9 +122,9 @@ const bgImage = convertToBgImage(image) */
             <FaFax />
       </ContactIconsBox>
       </IconsBox>
-        </AboutSectionContentBox>
+        </SectionContentBox>
 
- <AboutSectionContentBox
+ <SectionContentBox
            data-sal="fade-in"
            data-sal-delay="300"
            data-sal-easing="ease">
@@ -148,15 +148,15 @@ const bgImage = convertToBgImage(image) */
           </BackgroundImage>
           </AboutSectionContentInfo>
           
-        </AboutSectionContentBox>
+        </SectionContentBox>
 
       </AboutSectionContact>
-      <AboutSectionContentBox
+      <SectionContentBox
                 data-sal="fade-in"
                 data-sal-delay="0"
                 data-sal-easing="ease">
         <MapComponent />
-        </AboutSectionContentBox>
+        </SectionContentBox>
       </AboutSectionContentWrapper>
       </FluidSection>
   )

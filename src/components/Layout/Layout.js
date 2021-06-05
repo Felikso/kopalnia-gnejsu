@@ -13,9 +13,12 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../../style/GlobalStyle";
 import { theme } from "../../style/theme.js";
 
+import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+
 
 import Header from "../Header/Header"
 import ScrollBtn from "../../interactions/ScrollBtn"
+import CookiesBanner from "../CookiesBanner/CookiesBanner"
 import Footer from "../Footer/Footer"
 
 import "./layout.css"
@@ -72,7 +75,9 @@ const Layout = ({ children, offerLinks }) => {
             <GlobalStyle />
             <Header siteTitle={data.site.siteMetadata.title} links={offerLinks ? offerLinks : links}/>
             <ScrollBtn showBelow={250} />
+            <CookiesBanner showBelow={250} />
               <main>{children}</main>
+
               <Footer siteData={siteData} />
 
          </ThemeProvider>

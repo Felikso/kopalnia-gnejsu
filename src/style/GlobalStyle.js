@@ -15,6 +15,11 @@ export const GlobalStyle = createGlobalStyle`
    }
 
 
+   @keyframes coockieBoxAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
    /* Coockies Though */
 
    .cookie-though {

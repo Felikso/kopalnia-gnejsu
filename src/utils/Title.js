@@ -19,7 +19,7 @@ Title.defaultProps = {
 
 const TitleWrapper = styled.div`
   text-align: center;
-
+  margin-top: 20px;
   .subtitle {
     font-family: ${({ theme }) => theme.textStyle.textFamily};
     font-style: italic;

@@ -81,6 +81,29 @@ export const theme = {
     offerItemsBoxH3: "#868686",
     offerItemsBoxH3FS: "24px",
 
+
+    /* Section Content Box */
+
+    sectionContentBoxColor: "black",
+    sectionContentBoxBg: "rgba(255,255,255,.6)",
+    sectionContentBoxUnderline: "#bf4f01",
+    sectionContentBoxUnderlineHover: "#fb6c08",
+    sectionContentBoxIcon: "#fb6c08",
+    sectionContentBoxLink: "black",
+    sectionContentBoxLinkBg: "#1d1d1d3b",
+    sectionContentBoxMapLink: "black",
+
+    sectionContentBoxSpan: "orange",
+    sectionContentBoxSpanFS: "20px",
+
+    sectionContentBoxP: "black",
+    sectionContentBoxPFS: "16px",
+
+    sectionContentBoxH3: "#868686",
+    sectionContentBoxH3FS: "24px",
+
+    sectionContentBoxLiFS: "14px",
+
     /* About Section */
 
     aboutSectionColor: "black",
