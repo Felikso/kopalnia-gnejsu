@@ -5,10 +5,9 @@ import Layout from "../components/Layout/Layout"
 import SEO from "../components/SEO/Seo"
 import GalleryLightBox from "../components/GalleryLightBox/GalleryLightBox"
 
-import { CustomedHeader, Section, Title, LinkButton } from "../utils"
+import { CustomedHeader, Section, Title, LinkButton, ButtonBestia } from "../utils"
 import OfferContactSection from "../components/OfferContactSection/OfferContactSection"
 import {  GatsbyImage, getImage  } from 'gatsby-plugin-image'
-import ButtonBestia from "../customedItems/ButtonBestia"
 
 
 const GalleryPage = () => {

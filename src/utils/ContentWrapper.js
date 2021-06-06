@@ -10,11 +10,17 @@ margin: 2rem auto;
   word-spacing: 0.2rem;
 }
 
-/* @media (min-width: 768px) {
-  width: 70%;
+h3 {
+  font-size: ${({ theme }) => theme.colors.sectionContentWrapperH3FSsmall};
+  color: ${({ pColor, theme }) => pColor ? pColor : theme.colors.sectionContentWrapperH3};
+  text-align: center;
+  line-height: 2em;
 }
 
-@media (min-width: 968px) {
-  width: 60%;
-} */
+@media (min-width: ${({ theme }) => theme.device.m}) {
+
+  h3 {
+    font-size: ${({ theme }) => theme.colors.sectionContentWrapperH3FS};
+  }
+}
 `

@@ -6,9 +6,8 @@ import Layout from "../components/Layout/Layout"
 import SEO from "../components/SEO/Seo"
 import styled from "styled-components"
 
-import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader } from "../utils"
+import { ButtonBestia, Title, Section, ContentWrapper, CustomedHeader } from "../utils"
 
-import ButtonBestia from "../customedItems/ButtonBestia"
 const TransportPage = ({ data }) => {
 
   const { img, firstPhoto, secondPhoto } = useStaticQuery(
@@ -69,7 +68,7 @@ const secondImage = getImage(secondPhoto);
               </ButtonBestia>
      </Link>
       <Title title="transport" subtitle="dowiedz się więcej na temat transportu" />
-      <TransportContentWrapper>
+      <ContentWrapper>
       <h3>Dajemy Państwu możliwość dostarczenia naszego kruszywa w dwojaki sposób:</h3>
 
       <TransportContent>
@@ -85,7 +84,7 @@ const secondImage = getImage(secondPhoto);
         </TransportContentBox>
 
       </TransportContent>
-      </TransportContentWrapper>
+      </ContentWrapper>
       </Section>
 
     </Layout>
@@ -107,14 +106,6 @@ const TransportImage = styled(GatsbyImage)`
 
 `
 
-const TransportContentWrapper = styled(ContentWrapper)`
-  h3 {
-    font-size: ${({ theme }) => theme.colors.transportH3FS};
-    color: ${({ theme }) => theme.colors.transportH3};
-    line-height: 1.7em;
-    text-align: center;
-  }
-`
 
 const TransportContent = styled.section`
 

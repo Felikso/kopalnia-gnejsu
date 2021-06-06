@@ -6,9 +6,8 @@ import Layout from "../components/Layout/Layout"
 import SEO from "../components/SEO/Seo"
 import styled from "styled-components"
 
-import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader, SectionContentBox } from "../utils"
+import { ButtonBestia, Title, Section, ContentWrapper, CustomedHeader, SectionContentBox } from "../utils"
 
-import ButtonBestia from "../customedItems/ButtonBestia"
 const CookiesPage = ({ data }) => {
 
   const { img, firstPhoto, secondPhoto } = useStaticQuery(

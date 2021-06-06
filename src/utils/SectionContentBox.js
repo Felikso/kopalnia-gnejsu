@@ -25,25 +25,20 @@ position: relative;
 
 }
 
-  @media (min-width: ${({ theme }) => theme.device.m}) {
-/*     flex-direction: row;
-    justify-content: space-between; */
-  }
-
   li{
 
     font-style: italic;
-    font-size: ${({ theme }) => theme.colors.sectionContentBoxLiFS};
+    font-size: ${({ theme }) => theme.colors.sectionContentBoxLiFSsmall};
   }
 
   span{
-    font-size: ${({ theme }) => theme.colors.sectionContentBoxSpanFS};
+    font-size: ${({ theme }) => theme.colors.sectionContentBoxSpanFSsmall};
     font-weight: bold;
     color: ${({ spanColor, theme }) => spanColor ? spanColor : theme.colors.sectionContentBoxSpan};
   }
 
   p{
-    font-size: ${({ theme }) => theme.colors.sectionContentBoxPFS};
+    font-size: ${({ theme }) => theme.colors.sectionContentBoxPFSsmall};
     color: ${({ pColor, theme }) => pColor ? pColor : theme.colors.sectionContentBoxP};
     margin-top: 2em;
   }
@@ -52,4 +47,35 @@ position: relative;
     line-height: 2em;
     text-align: center;
   }
+
+  h4{
+    margin-bottom: 0;
+  }
+
+  @media (min-width: ${({ theme }) => theme.device.m}) {
+    li{
+
+      font-style: italic;
+      font-size: ${({ theme }) => theme.colors.sectionContentBoxLiFS};
+    }
+  
+    span{
+      font-size: ${({ theme }) => theme.colors.sectionContentBoxSpanFS};
+      font-weight: bold;
+      color: ${({ spanColor, theme }) => spanColor ? spanColor : theme.colors.sectionContentBoxSpan};
+    }
+  
+    p{
+      font-size: ${({ theme }) => theme.colors.sectionContentBoxPFS};
+      color: ${({ pColor, theme }) => pColor ? pColor : theme.colors.sectionContentBoxP};
+      margin-top: 2em;
+    }
+  
+    h6{
+      line-height: 2em;
+      text-align: center;
+    }
+    
+  }
+    
 `

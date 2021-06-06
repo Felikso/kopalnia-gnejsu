@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const ButtonBestia = ({ children, color, bg, hoverBg,  }) => {
+export const ButtonBestia = ({ children, color, bg, hoverBg,  }) => {
 
   return (
     <StyledButtonBestia bg={bg} hoverBg={hoverBg}>
@@ -9,8 +9,6 @@ const ButtonBestia = ({ children, color, bg, hoverBg,  }) => {
     </StyledButtonBestia>
   )
 }
-
-export default ButtonBestia
 
 const StyledButtonBestia = styled.button`
     

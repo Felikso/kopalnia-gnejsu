@@ -3,12 +3,11 @@ import { graphql, useStaticQuery } from "gatsby"
 import {  GatsbyImage, getImage  } from 'gatsby-plugin-image'
 import styled from "styled-components"
 
-import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader, FluidSection, SectionContentBox } from "../../utils"
+import { styles, PageHeader, Banner, Title, ContactIconsBox, ContentWrapper, FluidSection, SectionContentBox } from "../../utils"
 
 import { BiMailSend } from "@react-icons/all-files/bi/BiMailSend";
 import { FaFax } from "@react-icons/all-files/fa/FaFax";
 import { FiPhoneCall } from "@react-icons/all-files/fi/FiPhoneCall";
-import ContactIconsBox from "../../customedItems/ContactIconsBox"
 
 import MapComponent from "../MapComponent/MapComponent"
 
@@ -62,12 +61,13 @@ const bgImage = convertToBgImage(image) */
       <Title title="o nas" subtitle="poznaj nas lepiej" />
       <AboutSectionContentWrapper>
       
-      <AboutSectionContent>
+      <AboutSectionContent
+      id="o-nas">
         <SectionContentBox
           data-sal="fade-in"
           data-sal-delay="0"
           data-sal-easing="ease"
-          id="o-nas"
+          
           >
         <h3>o firmie:</h3>
           <p><strong>Kopalnia Gnejsu Pomianów-Doboszowice</strong> znajduje się w województwie dolnośląskim w miejscowości Doboszowice niedaleko Kamieńca Ząbkowickiego i Paczkowa. <strong>Nasza firma zajmuje się produkcją gnejsowych kruszyw drogowych i kolejowych</strong>.</p>
@@ -93,12 +93,13 @@ const bgImage = convertToBgImage(image) */
         </SectionContentBox>
       </AboutSectionContent>
 
-      <AboutSectionContact>
+      <AboutSectionContact
+       id="kontakt">
       <SectionContentBox
                 data-sal="fade-in"
                 data-sal-delay="0"
                 data-sal-easing="ease"
-                id="kontakt">
+                >
       <h3>dane kontaktowe:</h3>
       <IconsBox>
       <ContactIconsBox
@@ -128,8 +129,8 @@ const bgImage = convertToBgImage(image) */
            data-sal="fade-in"
            data-sal-delay="300"
            data-sal-easing="ease">
- <AboutSectionContentInfo>
-          <BackgroundImage
+
+          <SectionBgImage
               Tag="section"
               {...bgImage}
               preserveStackingContext
@@ -145,8 +146,8 @@ const bgImage = convertToBgImage(image) */
 
           <h4>NIP: 887-16-46-910</h4>
           
-          </BackgroundImage>
-          </AboutSectionContentInfo>
+          </SectionBgImage>
+
           
         </SectionContentBox>
 
@@ -164,6 +165,14 @@ const bgImage = convertToBgImage(image) */
 
 export default AboutSection
 
+const SectionBgImage = styled(BackgroundImage)`
+      background-size:contain;
+      background-position: bottom;
+      height: 100%;
+  &:after{
+    background-size:contain;
+  }
+`
 const MapBox = styled.div`
   position: relative;
   height: 200px;
@@ -191,11 +200,6 @@ const MapHref = styled.a`
 
 `
 
-
-const AboutSectionContentInfo = styled.div`
- /*  position: absolute; */
- height: 100%;
-`
 
 const AboutImage = styled(GatsbyImage)`
     position: absolute;
@@ -337,6 +341,7 @@ h3 {
   position: relative;
   font-size: ${({ theme }) => theme.colors.aboutSectionH3FS};
   color: ${({ theme }) => theme.colors.aboutSectionH3};
+  display: inline-block;
 }   
 
 h3:after {
@@ -347,7 +352,7 @@ h3:after {
    margin: 0;
    left: 0;
    right: 0;
- width: 100px;
+ width: 50%;
  background: ${({ theme }) => theme.colors.aboutSectionUnderline};
 
  -o-transition:.5s;
@@ -358,7 +363,7 @@ h3:after {
 }
 
 h3:hover:after {
- width: 150px;
+ width: 100%;
  background: ${({ theme }) => theme.colors.aboutSectionUnderlineHover};
 
 `

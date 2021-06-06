@@ -93,16 +93,32 @@ export const theme = {
     sectionContentBoxLinkBg: "#1d1d1d3b",
     sectionContentBoxMapLink: "black",
 
+    sectionContentBoxSpanFSsmall: "14px",
     sectionContentBoxSpan: "orange",
     sectionContentBoxSpanFS: "20px",
 
+    sectionContentBoxPFSsmall: "12px",
     sectionContentBoxP: "black",
     sectionContentBoxPFS: "16px",
 
+    sectionContentBoxH3FS: "18px",
     sectionContentBoxH3: "#868686",
     sectionContentBoxH3FS: "24px",
 
+    sectionContentBoxLiFSsmall: "12px",
     sectionContentBoxLiFS: "14px",
+
+    /* Contact Icons Box */
+
+    contactIconsBoxAfter: "green",
+    contactIconsBoxAfterHover: "orange",
+
+    /* Content Wrapper */
+
+    sectionContentWrapperH3FSsmall: "16px",
+    sectionContentWrapperH3FS: "18px",
+
+    sectionContentWrapperColor: "#868686",
 
     /* About Section */
 

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const ContactIconsBox = ({ children, href, bg, hoverBg, content }) => {
+export const ContactIconsBox = ({ children, href, bg, hoverBg, content }) => {
 
   return (
         <IconBox href={href}>
@@ -11,11 +11,10 @@ const ContactIconsBox = ({ children, href, bg, hoverBg, content }) => {
   )
 }
 
-export default ContactIconsBox
 
 const IconBox = styled.a`
     background: ${({ theme }) => theme.colors.aboutSectionLinkBg}; 
-    padding: 10px;
+    padding: 20px 10px;
       text-decoration: none;
       text-align: center;
       font-size: 50px;
@@ -39,7 +38,11 @@ const IconBox = styled.a`
 
       h5 {
         text-decoration: none; 
-        position: relative; 
+        position: relative;
+        display: inline-block;
+        margin: 0; 
+        word-break: break-word;
+        margin: 0 10px;
       }   
  
      h5:after {
@@ -52,7 +55,7 @@ const IconBox = styled.a`
        left: 0;
          right: 0;
        width: 50%;
-       background: green;
+       background: ${({ theme }) => theme.colors.contactIconsBoxAfter};
 
        -o-transition:.5s;
          -ms-transition:.5s;
@@ -62,15 +65,15 @@ const IconBox = styled.a`
      }
     
      h5:hover:after {
-       width: 80%;
-       background: orange;
+       width: 100%;
+       background: ${({ theme }) => theme.colors.contactIconsBoxAfterHover};
      }
 
       @media (min-width: ${({ theme }) => theme.device.l}) {
         font-size: 30px;
         text-align: start;
         display: flex;
-        align-items: baseline;
+        align-items: center;
         h5{
           font-size: 16px;
         }

@@ -6,10 +6,7 @@ import Layout from "../components/Layout/Layout"
 import GalleryLightBox from "../components/GalleryLightBox/GalleryLightBox"
 import styled from 'styled-components'
 
-import { CustomedHeader, Section, Title, LinkButton } from "../utils"
-
-import ButtonBestia from "../customedItems/ButtonBestia"
-
+import { CustomedHeader, Section, Title, ButtonBestia } from "../utils"
 
 
 export const query = graphql`

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import {  GatsbyImage, getImage  } from 'gatsby-plugin-image'
 import styled from "styled-components"
-import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader, FluidSection } from "../utils"
+import { styles, PageHeader, Banner, Title, Section, ButtonBestia, CustomedHeader, FluidSection } from "../utils"
 
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from 'gatsby-background-image'
@@ -11,7 +11,6 @@ import Layout from "../components/Layout/Layout"
 import SEO from "../components/SEO/Seo"
 
 import OfferContactSection from "../components/OfferContactSection/OfferContactSection"
-import ButtonBestia from "../customedItems/ButtonBestia"
 
 const Product = ({ data }) => {
 

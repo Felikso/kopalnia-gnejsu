@@ -4,8 +4,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby'
 import {  GatsbyImage } from 'gatsby-plugin-image'
 import 'react-slideshow-image/dist/styles.css'
 import './slider.css'
-
-import ButtonBestia from "../../customedItems/ButtonBestia"
+import { ButtonBestia } from "../../utils"
 
 import styled from 'styled-components'
 
@@ -79,8 +78,8 @@ query {
     <SliderBtnsSection>
        <span> Automatyczne przewijanie jest {autoplay ? 'włączone' : 'wyłączone'}</span>
       <SliderBtnsBox>
-        <div onClick={() => setAutoplay(false)}><ButtonBestia color="black" bg="#282936">Zatrzymaj</ButtonBestia></div>
-        <div onClick={() => setAutoplay(true)}><ButtonBestia color="black" bg="#acacac" hoverBg="white">Wznów</ButtonBestia></div>
+        <AutoPlayDiv onClick={() => setAutoplay(false)}><ButtonBestia color="black" bg="#282936">Zatrzymaj</ButtonBestia></AutoPlayDiv>
+        <AutoPlayDiv onClick={() => setAutoplay(true)}><ButtonBestia color="black" bg="#acacac" hoverBg="white">Wznów</ButtonBestia></AutoPlayDiv>
       </SliderBtnsBox>
     </SliderBtnsSection>
 
@@ -89,6 +88,10 @@ query {
 };
 
 export default SimplySlider;
+
+const AutoPlayDiv = styled.div`
+  margin: 10px;
+`
 
 const Slider = styled.div`
   display: grid;

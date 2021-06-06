@@ -8,9 +8,8 @@ import styled from "styled-components"
 
 import MapComponent from "../components/MapComponent/MapComponent"
 
-import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader } from "../utils"
+import { styles, PageHeader, Banner, Title, Section, ContentWrapper, CustomedHeader, ButtonBestia } from "../utils"
 
-import ButtonBestia from "../customedItems/ButtonBestia"
 const LocationPage = ({ data }) => {
 
   const { img, firstPhoto, secondPhoto } = useStaticQuery(

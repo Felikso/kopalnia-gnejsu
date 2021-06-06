@@ -7,7 +7,7 @@ import Layout from "../components/Layout/Layout"
 import SEO from "../components/SEO/Seo"
 import MainHeader from "../components/MainHeader/MainHeader"
 import HeroFullLogo from "../components/CustomedSiteComponents/HeroFullLogo"
-import { styles, PageHeader, Banner, Title, FluidSection, Section, HeroLink } from "../utils"
+import { styles, PageHeader, Banner, Title, FluidSection, ButtonBestia, HeroLink } from "../utils"
 import AboutSection from "../components/AboutSection/AboutSection"
 
 import styled from 'styled-components'
@@ -15,8 +15,6 @@ import styled from 'styled-components'
 import BackgroundCustomedSlider from "../customedLib/customed-slider-show"
 
 import SimplySlider from "../components/SimplySlider/SimplySlider"
-
-import ButtonBestia from "../customedItems/ButtonBestia"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
