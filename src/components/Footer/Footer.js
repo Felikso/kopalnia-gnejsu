@@ -28,7 +28,7 @@ const Footer = ({siteData}) => {
 ]
 
 const footerInfo = [
-  {title: "Coockies", link: "/polityka-prywatnosci"},
+  {title: "Mapa strony", link: "/sitemap/sitemap-index.xml"},
   {title: "Polityka prywatności", link: "/polityka-prywatnosci"},
   {title: "Coppyright © 2021", link: "/#"},
 ]

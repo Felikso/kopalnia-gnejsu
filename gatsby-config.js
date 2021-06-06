@@ -3,6 +3,7 @@ module.exports = {
     title: `Kopalnia Gnejsu - projekt strony`,
     description: `Autorski projekt strony www dla przedsiębiorstwa Kopalnia Gnejsu sp. z o. o.`,
     author: `@Felikso`,
+    siteUrl: `https://kopalnia-gnejsu.netlify.app/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -136,6 +137,14 @@ module.exports = {
         },
       },
     }, */
+    `gatsby-plugin-sitemap`,
+/*     {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+      }
+    }, */
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-preact`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
